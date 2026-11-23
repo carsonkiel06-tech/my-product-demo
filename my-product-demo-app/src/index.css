@@ -1,0 +1,134 @@
+:root {
+  --green: #2f6b3a;
+  --green-dark: #1f4a28;
+  --leaf: #e8f3e6;
+  --text: #1f2a22;
+  --muted: #55645a;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #fbfdfb;
+}
+
+.page {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 0 20px 40px;
+}
+
+.hero {
+  padding: 56px 0 32px;
+}
+
+.badge {
+  display: inline-block;
+  background: var(--leaf);
+  color: var(--green-dark);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+h1 {
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
+  line-height: 1.15;
+  margin: 16px 0 12px;
+  color: var(--green-dark);
+}
+
+h2 {
+  margin: 40px 0 16px;
+  color: var(--green-dark);
+}
+
+.lead {
+  font-size: 1.15rem;
+  color: var(--muted);
+  max-width: 60ch;
+}
+
+.grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.card {
+  background: var(--leaf);
+  border-radius: 12px;
+  padding: 18px;
+}
+
+.card h3 {
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+}
+
+.card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.feedback {
+  background: #fff;
+  border: 1px solid #d5e5d3;
+  border-radius: 12px;
+  padding: 8px 20px 24px;
+  margin-top: 32px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin: 12px 0 6px;
+}
+
+textarea {
+  width: 100%;
+  font: inherit;
+  padding: 10px;
+  border: 1px solid #b9cfb7;
+  border-radius: 8px;
+  resize: vertical;
+}
+
+button {
+  margin-top: 12px;
+  background: var(--green);
+  color: #fff;
+  border: 0;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--green-dark);
+}
+
+.error {
+  color: #a12a2a;
+  margin: 8px 0 0;
+}
+
+.confirmation p {
+  font-weight: 600;
+  color: var(--green-dark);
+}
+
+footer {
+  margin-top: 40px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
